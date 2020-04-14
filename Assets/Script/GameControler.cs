@@ -14,6 +14,14 @@ public class GameControler : MonoBehaviour
     int intComputer = 0;                                   //计算机出牌
     string strJudgeResult = null;                          //判断胜负结果
 
+    /// <summary>
+    /// 切换场景
+    /// </summary>
+    public void SwitchSceneToGameOver()
+    {
+        Utils.SwitchAndLoadScene(2);
+    }
+
     //点击调用。要想调用该方法，必须选中需要点击的Button按钮添加事件。即上图关联脚本的方法  
     //用户点击剪刀                                                       
     public void UserClikJiDao()
